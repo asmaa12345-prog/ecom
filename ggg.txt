@@ -1,0 +1,280 @@
+Framework :
+plusieur traduction :cardiciel/envirenment de développement /cadre d'application
+Ensemble des composants logiciels
+
+Type de fromwork:
+framework aplicatif poue développement déapplication
+framework de présentation de contenue web:Bootstrap
+Framework de persistances de donnés :hibernate
+framework de logging:log4j;
+
+framework Front-end:
+React.js(2013)
+AngularJs(2009)
+VueJs(2011)
+
+framework back-end:
+ExpressJs (2010)
+NextJs(2018)
+MeteoJs(2012)
+
+
+syntaxe :
+Map => let jeux['go','de'];
+let prix = [99,15];
+let t = jeux.map((j,i)=>({nom: j , prix:prix[i]}));
+  
+Reduce
+
+
+JSX:
+Extension de syntaxe pour Javascript qui ajoute la syntaxe XML à Javascript
+
+
+webpack:
+il dispose d'un systéme de "loaders" qui vont permettre d'include de nouveux types de fichiers oui d'appliquer des transformation spécifiques pour que le code soint
+
+Dépendances externes (librairies) de l'application
+Ressources publiques de l'application
+Code source de l'application (composants du react:jsx,css...)
+Fichiers de configuration du projet
+
+
+composant react:
+permet d créer des application web de type SPA 
+react js: l'arbre de composant
+
+le moteur de rendu JSX permet de coupler dans un meme fichier JSX les trois aspects d'un composant react
+
+le moteur de react génère un DOM virtuel qui sera transformer et synchronisé 
+le DOM  HTML:
+les élément html comme des objet 
+les propriétés de tous les élément (les valeurs 
+
+Real dom
+il se met à jour lentement 
+peut directement mettre à jour le code html
+créer un nouveau DOM si l'élément est mise à jour
+
+Virtuel DOM
+il se mise à jour plus rapidement 
+impossible de mettreà jour directement lr code html 
+JSX s'occupe de la mise à jour de l'élément
+la manipulation DOM est très facile
+
+Data binding:
+Ce mécanisme consiste à lier la partie vue à la partie logique si la suorce de donnés change 
+
+
+(this.state.values) =>hadi bach n3ayat liha
+this.setstate
+
+
+// class StateExemple extends Composent { 
+//   constructor(props) { 
+//     super(props); 
+//     this.state = {
+//     };
+//   }
+
+//   increment = ()=> {
+//     this.setState({
+//         counter:this.state.counter +1 
+//     })
+//   }
+//   Dcrement = ()=> {
+//     this.setState({
+//         counter:this.state.counter +1 
+//     })
+//   }
+
+//   render() {
+//     return (
+//      <div>
+//         <input type="button" onClick={()=>this.increment()} value='increment'/>
+//         <input type="button" onClick={()=>this.increment()} value='increment'/><br/>
+//         <h1>{this.state.counter}</h1>
+     
+//      </div>
+//     );
+// }
+// }
+
+// this.state = {
+//   monText:"Bienvenud à cette formation React",
+//   personnes :[
+//     {id:1,nom:"John"},
+//     {id:2,nom:"Blandine"},
+//     {id:123,nom:"Paul"},
+
+
+//   ]
+// };
+
+class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state={
+      monText:"Bienvenud à cette formation React",
+      personnes :[
+        {id:1,nom:"John"},
+        {id:2,nom:"Blandine"},
+        {id:123,nom:"Paul"},
+    
+    
+      ]
+    };
+
+
+    }
+
+    render(){
+      return(
+        <div>
+         {
+           this.state.personnes.map((element)=>(<p>id:{element.id}----- nom:{element.nom} </p>))
+         }
+        </div>
+      )
+    }
+  }
+   
+
+props: des information à un composant  
+
+const formf=()=>{
+const [nom,setNom] =useState ('');
+prnom
+const navigate = usenavigate();
+
+
+
+
+// import React from "react";
+// import "./App.css";
+// import Personne from "./Personne.js";
+// import Input from "./Input.js";
+// import Form from ".Form.js";
+// import Affichage from "./Affichage.js";
+// import StateExemple from './StateExemple';
+
+
+// import MyNavbar from './Navbar';
+
+// import Sidebar from './Sidebar';
+// import ProductCard from './ProductCard';
+// import styled from "@emotion/styled/base";
+// import ProductPage from './ProductPage';
+
+// import { Composent } from "react";
+
+
+  
+// function App() {
+//   const products = [
+//     {
+//       name: 'Produit 1',
+//       price: 29.99,
+//       image: 'https://th.bing.com/th/id/R.2b2ac1bb5b369a4aea0e5dc1768f10b4?rik=uXHEZ0EPPT7U7w&pid=ImgRaw&r=0'
+//     },
+//     {
+//       name: 'Produit 2',
+//       price: 39.99,
+//       image: 'https://images.pexels.com/photos/9219006/pexels-photo-9219006.jpeg?auto=compress&cs=tinysrgb&w=600'
+//     },
+//     {
+//       name: 'Produit 3',
+//       price: 49.99,
+//       image: 'https://images.pexels.com/photos/2633986/pexels-photo-2633986.jpeg?auto=compress&cs=tinysrgb&w=600'
+//     },
+//     {
+//       name: 'Produit 4',
+//       price: 19.99,
+//       image: 'https://via.placeholder.com/150'
+//     },
+//     {
+//       name: 'Produit 5',
+//       price: 59.99,
+//       image: 'https://via.placeholder.com/150'
+//     },
+//     {
+//       name: 'Produit 6',
+//       price: 79.99,
+//       image: 'https://via.placeholder.com/150'
+      
+//     }
+//   ];
+  
+
+//   return (
+//     <div className="container mt-5">
+//        <div style={{ marginBottom: '20px', position: 'relative', top: '-30px' }}>
+//         <MyNavbar />
+
+//       </div>
+    
+      {/* <div>
+      <ProductPage />
+
+      </div> */}
+//       <div className="row">
+//         {products.map((product, index) => (
+//           <div className="col-md-4" key={index}>
+//             <ProductCard product={product} />
+//             <div style={{width:'30px'}}></div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+     
+     
+      {/* <>
+      <Container maxwidth="lg">
+      <Typography variant='h4' align="center" style={{marginTop:"50px"}}>
+        The Poduct
+      </Typography>
+      <Grid container spacing={5} style={{marginTop:"20px"}}>
+        
+      </Grid>
+      </Container>
+
+
+      </> */}
+
+class App extends React.Component{
+   constructor(props){
+    super(props)
+    this.state={
+      monText:"Bienvenue à cette formation React",
+      personnes:[
+        {id:1,nom:"Jaun"},
+        {id:2,nom:"Sara"},
+        {id:3,nom:"Laila"},
+
+      ]
+
+    }
+   }
+
+      render(){
+      return(
+        <div>
+         {/* {
+           this.state.personnes.map((element)=>(<p>id:{element.id}----- nom:{element.nom} </p>))
+         } */}
+         {/* <Personne nom='oussama' prenom='taljaoui'/> */}
+         {/* <Input/> */}
+        </div>
+      )
+    }
+  }
+     
+  <div>
+    <Form/>
+    <Affichage/>
+  </div>
+
+
+export default App;

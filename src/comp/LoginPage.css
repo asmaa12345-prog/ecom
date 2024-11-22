@@ -1,0 +1,101 @@
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style principal pour la page de login */
+.login-page {
+    padding: 20px 40px;
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.login-page .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Formulaire de connexion */
+.login-page .container .form {
+    background: #f6f6f6;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 3px solid #fed700;
+    border-radius: 5px;
+}
+
+/* Titre du formulaire */
+.login-page .container .form h2 {
+    color: #cd1e7c;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container pour les champs de formulaire */
+.login-page .container .form .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Etiquettes des champs */
+.login-page .container .form .box .label h4 {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Champ input pour le nom d'utilisateur et le mot de passe */
+.login-page .container .form .box .input input {
+    width: 100%; /* Assurer que les champs prennent toute la largeur disponible */
+    margin-bottom: 20px; /* Espacement entre les champs */
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #8a8a8a;
+    padding: 12px 20px; /* Plus de padding pour un meilleur confort */
+    font-size: 16px; /* Augmenter la taille de la police pour plus de lisibilité */
+    border-radius: 5px; /* Arrondir légèrement les coins */
+}
+
+/* Bouton de soumission */
+.login-page .container .form button {
+    width: 100%; /* Le bouton prend toute la largeur */
+    padding: 14px 0; /* Augmenter le padding pour le bouton */
+    color: #232323;
+    border: none;
+    outline: none;
+    background: #fed700;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px; /* Espacement avant le bouton */
+}
+
+.login-page .container .form button:hover {
+    background: #e5c200;
+}
+
+/* Message d'erreur ou d'information */
+.login-page .login-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+#cv-preview {
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; 
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 95px; 
+    height: 95px;
+    border-radius: 50%; 
+    border: 2px solid #333; 
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3.section-title {
+    color: #555;
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff; 
+}
